@@ -485,17 +485,7 @@
   <!-- Left Nav -->
   <nav class="page-nav" id="page-nav">
     <div class="nav-group-label">Contents</div>
-    <a class="nav-link active" href="#db-setup" data-section="db-setup">
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <ellipse cx="8" cy="4" rx="6" ry="2.5"/>
-        <path d="M2 4v3c0 1.38 2.69 2.5 6 2.5s6-1.12 6-2.5V4"/>
-        <path d="M2 7v3c0 1.38 2.69 2.5 6 2.5s6-1.12 6-2.5V7"/>
-        <path d="M2 10v2c0 1.38 2.69 2.5 6 2.5s6-1.12 6-2.5v-2"/>
-      </svg>
-      Database Setup
-    </a>
-    <div class="nav-spacer"></div>
-    <a class="nav-link" href="#api-integration" data-section="api-integration">
+    <a class="nav-link active" href="#api-integration" data-section="api-integration">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="5 4 1 8 5 12"/>
         <polyline points="11 4 15 8 11 12"/>
@@ -516,84 +506,10 @@
   <!-- Main Content -->
   <main class="page-content">
 
-    <!-- ── SECTION 1: Database Setup ──────────────────── -->
-    <section class="section" id="db-setup">
-      <div class="section-header">
-        <div class="section-num">1</div>
-        <h2 class="section-title">Database Setup</h2>
-      </div>
-      <p class="section-desc">Import all 1,324 exercises into your database in 3 steps. Choose your database engine below.</p>
-
-      <div class="section-body">
-        <!-- DB Tabs -->
-        <div class="tab-bar" id="db-tabs" role="tablist">
-          <button class="tab-btn active" data-db="mssql" role="tab">SQL Server</button>
-          <button class="tab-btn" data-db="postgresql" role="tab">PostgreSQL</button>
-          <button class="tab-btn" data-db="mysql" role="tab">MySQL</button>
-          <button class="tab-btn" data-db="sqlite" role="tab">SQLite</button>
-        </div>
-
-        <div class="step-list">
-          <!-- Step 1 -->
-          <div class="step">
-            <div class="step-num">1</div>
-            <div class="step-body">
-              <h3 class="step-title">Create Table</h3>
-              <p class="step-desc">Run this in your database client (SSMS, DBeaver, pgAdmin, TablePlus, etc.):</p>
-              <div class="code-block">
-                <button class="copy-btn" id="copy-create-btn">Copy</button>
-                <pre class="code-pre" id="create-table-sql"></pre>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="step">
-            <div class="step-num">2</div>
-            <div class="step-body">
-              <h3 class="step-title">Import Data</h3>
-              <p class="step-desc">Generate a <code>.sql</code> file with all 1,324 INSERT statements. The file is built entirely in your browser — nothing is uploaded to any server.</p>
-              <div style="display:flex;align-items:center;gap:0;">
-                <button class="generate-btn" id="generate-sql-btn">
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
-                    <path d="M8 2v8M5 7l3 3 3-3"/><path d="M2 12h12"/>
-                  </svg>
-                  Generate INSERT SQL
-                </button>
-                <span class="generate-status" id="generate-status"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="step">
-            <div class="step-num">3</div>
-            <div class="step-body">
-              <h3 class="step-title">Media Files</h3>
-              <p class="step-desc">Download the media archives and place them in your web server root or CDN. The <code>image</code> and <code>gif_url</code> columns store relative paths — prepend your base URL in your app.</p>
-              <div class="code-block">
-                <pre class="code-pre">your-server.com/
-├── images/   ← 1,324 JPG thumbnails
-└── videos/   ← 1,324 GIF animations</pre>
-              </div>
-              <div class="media-note">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px">
-                  <circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.5h.01"/>
-                </svg>
-                The <code>images/</code> and <code>videos/</code> folders are already included in the repository. After cloning, just copy them to your server or CDN — no separate download needed.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ── SECTION 2: API Integration ─────────────────── -->
+    <!-- ── SECTION 1: API Integration ─────────────────── -->
     <section class="section" id="api-integration">
       <div class="section-header">
-        <div class="section-num">2</div>
+        <div class="section-num">1</div>
         <h2 class="section-title">API Integration</h2>
       </div>
       <p class="section-desc">Client-side code examples showing how to call your backend API from your app. Enter your API base URL below — all examples update live.</p>
@@ -677,10 +593,10 @@
 
     <div class="divider"></div>
 
-    <!-- ── SECTION 3: Ask Your LLM ─────────────────────── -->
+    <!-- ── SECTION 2: Ask Your LLM ─────────────────────── -->
     <section class="section" id="ask-llm">
       <div class="section-header">
-        <div class="section-num">3</div>
+        <div class="section-num">2</div>
         <h2 class="section-title">Ask Your LLM</h2>
       </div>
       <p class="section-desc">
@@ -1472,29 +1388,14 @@ Write clean, production-quality code. Do not skip error handling.`;
 // ── State ──────────────────────────────────────────
 // ══════════════════════════════════════════════════
 
-let currentDb   = 'mssql';
 let currentLang = 'curl';
 let currentFw   = 'express';
 let currentLlmDb = 'postgresql';
 let currentBaseUrl = 'https://api.yourapp.com';
-let EXERCISES = null; // lazy-loaded when generate is clicked
 
 // ══════════════════════════════════════════════════
-// ── DB Setup ───────────────────────────────────────
+// ── Clipboard helper ───────────────────────────────
 // ══════════════════════════════════════════════════
-
-const createSqlEl   = document.getElementById('create-table-sql');
-const copyCreateBtn = document.getElementById('copy-create-btn');
-const generateBtn   = document.getElementById('generate-sql-btn');
-const generateStatus = document.getElementById('generate-status');
-
-function switchDbTab(db) {
-  currentDb = db;
-  document.querySelectorAll('#db-tabs .tab-btn').forEach(t => {
-    t.classList.toggle('active', t.dataset.db === db);
-  });
-  createSqlEl.textContent = DB_SQL[db];
-}
 
 function copyToClipboard(text, btn, resetLabel = 'Copy') {
   navigator.clipboard.writeText(text).then(() => {
@@ -1506,108 +1407,6 @@ function copyToClipboard(text, btn, resetLabel = 'Copy') {
     }, 2000);
   });
 }
-
-function escStr(val, db) {
-  if (val === null || val === undefined) return 'NULL';
-  const s = String(val).replace(/'/g, "''");
-  return db === 'mssql' ? `N'${s}'` : `'${s}'`;
-}
-
-function buildInserts(exercises, db) {
-  const lines = [];
-  const header = db === 'mssql' ? 'BEGIN TRANSACTION;\nGO\n' : 'BEGIN;\n';
-  const footer = db === 'mssql' ? '\nCOMMIT;\nGO' : '\nCOMMIT;';
-  lines.push(header);
-
-  exercises.forEach((ex, i) => {
-    const muscles = JSON.stringify(Array.isArray(ex.secondary_muscles) ? ex.secondary_muscles : []);
-    const instrEn = ex.instructions && ex.instructions.en
-      ? ex.instructions.en
-      : (Array.isArray(ex.instruction_steps) ? ex.instruction_steps.join(' ') : (ex.instructions || ''));
-    const instrEs = ex.instructions && ex.instructions.es ? ex.instructions.es : '';
-    const instrIt = ex.instructions && ex.instructions.it ? ex.instructions.it : '';
-    const instrTr = ex.instructions && ex.instructions.tr ? ex.instructions.tr : '';
-    const instrRu = ex.instructions && ex.instructions.ru ? ex.instructions.ru : '';
-    const instrZh = ex.instructions && ex.instructions.zh ? ex.instructions.zh : '';
-    const instrHi = ex.instructions && ex.instructions.hi ? ex.instructions.hi : '';
-    const instrPl = ex.instructions && ex.instructions.pl ? ex.instructions.pl : '';
-    const instrKo = ex.instructions && ex.instructions.ko ? ex.instructions.ko : '';
-
-    const vals = [
-      escStr(ex.id, db),
-      escStr(ex.name, db),
-      escStr(ex.category, db),
-      escStr(ex.body_part, db),
-      escStr(ex.equipment, db),
-      escStr(instrEn, db),
-      escStr(instrEs, db),
-      escStr(instrIt, db),
-      escStr(instrTr, db),
-      escStr(instrRu, db),
-      escStr(instrZh, db),
-      escStr(instrHi, db),
-      escStr(instrPl, db),
-      escStr(instrKo, db),
-      escStr(ex.muscle_group, db),
-      escStr(muscles, db),
-      escStr(ex.target, db),
-      escStr(ex.image, db),
-      escStr(ex.gif_url, db),
-      escStr(ex.created_at, db),
-    ].join(', ');
-
-    lines.push(`INSERT INTO exercises (id, name, category, body_part, equipment, instructions_en, instructions_es, instructions_it, instructions_tr, instructions_ru, instructions_zh, instructions_hi, instructions_pl, instructions_ko, muscle_group, secondary_muscles, target, image, gif_url, created_at) VALUES (${vals});`);
-
-    if (db === 'mssql' && (i + 1) % 50 === 0 && i + 1 < exercises.length) {
-      lines.push('GO');
-    }
-  });
-
-  lines.push(footer);
-  return lines.join('\n');
-}
-
-async function generateInsertSql() {
-  generateBtn.disabled = true;
-
-  try {
-    if (!EXERCISES) {
-      generateStatus.textContent = 'Loading exercise data…';
-      const res = await fetch('data/exercises.json');
-      if (!res.ok) throw new Error('Could not load exercises.json');
-      EXERCISES = await res.json();
-    }
-
-    generateStatus.textContent = 'Generating…';
-
-    await new Promise(r => setTimeout(r, 10));
-
-    const sql  = buildInserts(EXERCISES, currentDb);
-    const blob = new Blob([sql], { type: 'text/plain;charset=utf-8' });
-    const url  = URL.createObjectURL(blob);
-    const a    = document.createElement('a');
-    a.href     = url;
-    a.download = `exercises_insert_${currentDb}.sql`;
-    a.click();
-    URL.revokeObjectURL(url);
-    generateStatus.textContent = `✓ Downloaded exercises_insert_${currentDb}.sql`;
-  } catch (e) {
-    generateStatus.textContent = 'Error generating file.';
-    console.error(e);
-  }
-
-  generateBtn.disabled = false;
-}
-
-// Wire DB tab events
-document.querySelectorAll('#db-tabs .tab-btn').forEach(tab => {
-  tab.addEventListener('click', () => switchDbTab(tab.dataset.db));
-});
-copyCreateBtn.addEventListener('click', () => copyToClipboard(createSqlEl.textContent, copyCreateBtn));
-generateBtn.addEventListener('click', generateInsertSql);
-
-// Init
-switchDbTab('mssql');
 
 // ══════════════════════════════════════════════════
 // ── API Integration ────────────────────────────────
